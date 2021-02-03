@@ -1,10 +1,13 @@
 <template>
-  <div class="container">Hello world</div>
+  <div class="container">
+    <SocialLoginBtn provider="github" />
+  </div>
 </template>
 
 <script>
+import SocialLoginBtn from '~/components/SocialLoginBtn'
 export default {
-  middleware: 'auth',
+  components: { SocialLoginBtn },
 }
 </script>
 

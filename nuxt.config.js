@@ -20,7 +20,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['plugins/axios'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -46,8 +46,9 @@ export default {
 
   publicRuntimeConfig: {
     axios: {
-      browserBaseURL: 'https://s4jbj25ofe.execute-api.eu-west-1.amazonaws.com',
+      browserBaseURL: 'http://localhost:8000',
     },
+    apiOrigin: 'http://localhost:8000',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
