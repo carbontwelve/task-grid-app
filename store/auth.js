@@ -45,7 +45,7 @@ export const actions = {
   async fetchUser({ commit }) {
     try {
       const { data } = await this.$axios.get('/api/user')
-      commit('setUser', { user: data })
+      commit('setUser', { user: data.data })
     } catch (e) {
       commit('unsetToken')
     }
