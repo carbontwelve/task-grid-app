@@ -98,10 +98,11 @@ export default {
 <style>
 input {
   padding: 0.5rem;
-  box-shadow: 0px 0px 5px #1a202c42;
+  box-shadow: 0 0 5px #1a202c42;
 }
 
 .ui--slide-panel {
+  z-index: 1;
   @apply w-screen h-screen fixed inset-0 overflow-hidden;
   transition: visibility 500ms linear;
 }
