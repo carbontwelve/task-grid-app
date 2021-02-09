@@ -31,7 +31,7 @@
         </div>
       </div>
     </section>
-    <footer>Hello world</footer>
+    <!--    <footer>Hello world</footer>-->
   </div>
 </template>
 
@@ -48,7 +48,7 @@ export default {
     for (let id = 0; id < 8; id++) {
       this.milestones.push({
         id,
-        name: 'MS ' + id,
+        name: 'Wk.' + (id + 1),
       })
     }
 
@@ -59,7 +59,7 @@ export default {
       }
       this.tasks.push({
         id,
-        name: 'Lorem ipsum' + id,
+        name: 'Lorem ipsum',
         milestones,
       })
     }
@@ -74,7 +74,7 @@ export default {
 
 .ui--workbook {
   @apply flex-grow grid grid-cols-1;
-  grid-template-rows: 3rem 1fr 2rem;
+  grid-template-rows: 3rem 1fr;
   overflow: hidden;
 }
 
@@ -101,7 +101,7 @@ export default {
 
 .ui--workbook section {
   @apply col-span-12 row-span-1 bg-gray-200;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 3rem);
   width: 100%;
   overflow-y: scroll;
 }
